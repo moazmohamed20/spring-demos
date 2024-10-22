@@ -1,0 +1,14 @@
+UcsServer: [Interactions, Attachments, ContactData = User = Client]
+--------------------------------------------------------------
+- User (Client) => contactid
+- Agent => ownerid @ Interaction @ UcsServer	==	dbId @ Person @ CfgServer 
+
+ConigServer: [Agents]
+-----------------------------------------------------------------------
+- Contain All Configs of Genesys Like
+- Every Thing Is Object with Id Named `dbId`
+- Every Class Starts With `Cfg` We Always Get It From CfgServer Like: CfgPerson, CfgDN...
+
+UcsServer: Send Request + Receive Event
+CfgServer: Send Query   + Receive QueryResult [.execute(), .executeSingleResult()]
+

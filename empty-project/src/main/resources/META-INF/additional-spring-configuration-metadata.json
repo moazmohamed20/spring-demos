@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "app.name",
+      "type": "java.lang.String",
+      "description": "The name of the application, it is recommended to be same as the artifactId: @artifactId@"
+    },
+    {
+      "name": "app.root",
+      "type": "java.lang.String",
+      "description": "The root path of the application. i.e. C:/IST/my-app"
+    },
+    {
+      "name": "app.logs",
+      "type": "java.lang.String",
+      "description": "The path of the logs directory. i.e. C:/IST/my-app/logs"
+    }
+  ]
+}

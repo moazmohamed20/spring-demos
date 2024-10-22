@@ -1,0 +1,1 @@
+insert into users values (1, 'moaz.mohamed@istnetworks.com', 'Moaz Mohamed')

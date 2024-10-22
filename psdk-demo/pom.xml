@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.7.18</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.istnetworks</groupId>
+  <artifactId>psdk-demo</artifactId>
+  <version>1.0.0</version>
+  <name>psdk-demo</name>
+
+  <packaging>jar</packaging>
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+
+  <repositories>
+
+    <!-- Genesyslab Local Repository -->
+    <repository>
+      <id>lib</id>
+      <url>file://${basedir}/genesyslib</url>
+    </repository>
+
+  </repositories>
+
+  <dependencies>
+
+    <!-- Spring Web -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+    </dependency>
+
+    <!--	Genesys	-->
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty</artifactId>
+      <version>3.9.4.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>apptemplate</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>comappblock</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>commons</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>commonsappblock</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>configurationprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>connection</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>contactsprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>jackson2-module</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>kvlistbinding</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>kvlists</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>logging</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>managementprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>messagebrokerappblock</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>openmediaprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>outboundprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>protocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>protocolmanagerappblock</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>reportingprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>system</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>routingprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>voiceprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>warmstandbyappblock</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.genesyslab.platform</groupId>
+      <artifactId>webmediaprotocol</artifactId>
+      <version>853.2.1</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

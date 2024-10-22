@@ -1,0 +1,9 @@
+com\roma\processor\HackProcessor.class
+com\roma\annotation\Logger.class
+com\roma\processor\BuilderProcessor.class
+com\roma\annotation\Hack.class
+com\roma\processor\MarkerProcessor.class
+com\roma\processor\LoggerProcessor.class
+com\roma\annotation\Builder.class
+META-INF\services\javax.annotation.processing.Processor
+com\roma\annotation\Marker.class
